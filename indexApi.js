@@ -228,3 +228,42 @@ export const fruitNames =[
         "name": "Watermelon"
     }
 ]
+
+var glowLevel = 0;
+var glowLevel2 = 20;
+var minus = 0;
+export function buttonGlow(){
+    
+    var delayInMilliseconds = 100;
+    setTimeout(function(){
+        glowLevel ++;
+        if(glowLevel < 20){
+            document.getElementById("btnSubscribeID").style.boxShadow = `0px 0px ${glowLevel}px 1px #ff4f0f`
+            console.log(glowLevel);
+        }
+        else if(glowLevel >= 20 && glowLevel <= 40){
+            // console.log(true)
+            minus ++
+            var glow = glowLevel2 - minus;
+            console.log(glow);
+            // glowLevel = glowLevel - glowLevel2;
+            document.getElementById("btnSubscribeID").style.boxShadow = `0px 0px ${glow}px 1px #ff4f0f`
+            if(minus === 20){
+                glowLevel = 0;
+                minus = 0;
+                console.log(`formated true`)
+            }
+        }
+        
+        // else if(glowLevel > 15){
+            
+        // }
+        // else{}
+        // console.log(glowLevel);
+        
+        // while(glowLevel){
+            if(glowLevel < 50){
+                buttonGlow();
+            }
+    }, delayInMilliseconds)
+}

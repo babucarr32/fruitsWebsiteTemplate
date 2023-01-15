@@ -130,9 +130,10 @@ li{
     border-radius: 3vw;
     color: black;
     border-style: none;
-    box-shadow:  0 0 5px 1px var(--footerColor);
+    /* box-shadow:  0 0 5px 1px var(--footerColor); */
 }
 .btnSubscribe:hover{
-    background-color: rgb(0, 123, 255);
-    box-shadow:  0 0 5px 1px rgb(0, 123, 255);
+    background-color: rgb(255, 255, 255);
+    /* color: #ff4f0f; */
+    /* box-shadow:  0 0 5px 1px rgb(0, 123, 255); */
 }

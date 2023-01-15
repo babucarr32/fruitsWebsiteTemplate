@@ -1,4 +1,7 @@
 import { fruitNames } from "./indexApi.js";
+// import {} from './myscript.js';
+import { buttonGlow } from "./indexApi.js";
+window.buttonGlow=buttonGlow;
 
 function createDOMElement(DOM){
     // Create column tag
@@ -57,10 +60,12 @@ function(e){
         const fruitName = assignChildren[0].children[1].innerHTML.toLowerCase();
         if(fruitName.includes(keyword)){
             // console.log(fruitName);
-            fruits.style.display = fruits
+            fruits.style.display = fruits;
         }
         else{
             fruits.style.display = 'none';
         }
     }
 })  
+
+// For subscribe button

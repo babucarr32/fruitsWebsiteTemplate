@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Fjalla+One&family=Oxygen:wght@400;700&family=Tangerine:wght@700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body onpageshow="buttonGlow()">
     <div class="containerRelative">
         <div class="searchItems">
             <form action="">
@@ -46,7 +46,7 @@
             </div>
         </div>
     </div>
-    <script type="module" src="index.js"></script>
+    
 </body>
 <footer>
     <div class="torelative">
@@ -71,12 +71,13 @@
                     <form action="">
                         <input id="emailInputID" type="email" placeholder="Email.." >
                         <br>
-                      
-                        <button class="btnSubscribe">Subscribe</button>
+                        <button id="btnSubscribeID" onclick="" class="btnSubscribe">Subscribe</button>
                     </form>
                 </li>
             </ul>
         </div>
     </div>
 </footer>
+<!-- <script type="module">import {buttonGlow} from "./index.js"</script> -->
+<script type="module" src="index.js"></script>
 </html>
