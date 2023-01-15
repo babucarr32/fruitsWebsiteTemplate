@@ -27,7 +27,8 @@ body{
     border-radius: 3vh;
     border-color: black;
     border-style: solid;
-    box-shadow: 0 0 5px 2px;
+    box-shadow: 0 0 5px 2px ;
+    padding: 20px;
 }
 #search:focus{
     border-color: black;
@@ -120,6 +121,7 @@ li{
     width: 25vw;
     height: 4vw;
     color: black;
+    padding: 20px;
 }
 
 .btnSubscribe{
