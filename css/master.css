@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+.containerRelative{
+    position: relative;
+}
+.searchItems{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.592);
+    height: 7vw;
+}
+#search{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20vw;
+    height: 3.5vw;
+    outline: none;
+    border-radius: 3vh;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 0 0 5px 2px;
+}
+#search:focus{
+    border-color: black;
+}
+/* .coverImage{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+} */
+#image{
+    width: 100%;
+    height: auto;
+}
+.welcomeTextDiv{
+    position: absolute;
+    width: 100%;
+    background-color: #ff670f56;
+    text-align: center;
+    top: 40%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 8px 5px #00000056;
+}
+#welcomeText{
+    color: rgb(0, 0, 0);
+    font-family: 'Cookie';
+    font-size: 8vw;
+    margin: 10px;
+}
