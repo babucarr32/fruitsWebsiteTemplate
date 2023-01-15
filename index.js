@@ -44,3 +44,23 @@ function createElements(){
     }
 }
 createElements();
+// getting the search input
+
+document.querySelector('#search').addEventListener('keyup', 
+function(e){
+    const keyword = e.target.value.toLowerCase();
+    console.log(keyword);
+    const fruitFinder = document.querySelectorAll('.col-md-4');
+    for(let fruits of fruitFinder){
+        let assignChildren = fruits.children;
+        // console.log(assignChildren[0].children[1].innerHTML);
+        const fruitName = assignChildren[0].children[1].innerHTML.toLowerCase();
+        if(fruitName.includes(keyword)){
+            // console.log(fruitName);
+            fruits.style.display = fruits
+        }
+        else{
+            fruits.style.display = 'none';
+        }
+    }
+})  
